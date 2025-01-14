@@ -1,0 +1,215 @@
+/* Add this at the top of your CSS file */
+@font-face {
+    font-family: 'Wasted Vindey';
+    src: url('path-to-your-font/WastedVindey.ttf') format('truetype');
+    /* Add additional font formats if you have them (.woff, .woff2, etc.) */
+}
+
+/* Apply the font globally */
+* {
+    font-family: 'Wasted Vindey', sans-serif;
+}
+
+/* Specific styles for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Wasted Vindey', sans-serif;
+}
+
+/* Body text */
+p, span, a {
+    font-family: 'Wasted Vindey', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation links */
+.nav-links h2 {
+    font-family: 'Wasted Vindey', sans-serif;
+}
+
+
+/* Content box text */
+.content-box p {
+    font-family: 'Wasted Vindey', sans-serif;
+    line-height: 1.7;
+}
+
+/* Footer text */
+.footer-content p {
+    font-family: 'Wasted Vindey', sans-serif;
+    line-height: 1.5;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white; /* adjust color as needed */
+  }
+  
+  .logo .gulplogo {
+    height: 150px; /* adjust size as needed */
+    width: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    bottom: 20px;
+    right: 100px;
+  }
+  
+  .nav-links h2 {
+    margin: 0;
+    cursor: pointer;
+
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container {
+    background-color: #59331D; /* Using the background color from your highlighted code */
+    width: 90%; /* Makes it slightly smaller than full width */
+    margin: 0; /* Centers the container */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image1 {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block; /* Removes any unwanted space below the image */
+  }
+  
+  .content-box {
+    background-color: white;
+ 
+    padding: 30px;
+    margin: 0;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-box h2 {
+    color: white;
+    position: relative;
+    left: 350px;
+}
+
+.content-box p {
+    line-height: 1.6;
+    color: white;
+}
+.content-box {
+    background-color: #59331D;
+    
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 10px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between images */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1800px;
+}
+
+.image-row img {
+    width: calc(33.33% - 14px); /* Equal width for all images */
+    height: 450px; /* Fixed height */
+    object-fit: cover; /* Maintains aspect ratio */
+    border-radius: 8px;
+}
+.section1{
+    background-color: #131D26;
+    width: 100vw;
+    position: relative;
+    right: 10px;  
+}
+.section2{
+    background-color: #D98555;
+    position: relative;
+    bottom: 20px;
+    width: 100vw;
+    right: 10px;
+}
+.section3{
+    background-color: #082B59 ;
+    width: 100vw;
+    position: relative;
+    right: 10px;
+}
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.text-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-box p {
+    line-height: 1.6;
+    color: #666;
+}
+footer {
+    background-color: white;
+    padding: 40px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
