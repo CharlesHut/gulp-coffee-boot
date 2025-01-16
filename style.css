@@ -284,18 +284,9 @@ footer {
 .section4{
     background-color: #D98555;
     position: relative;
-    bottom: 40px;
+    bottom: 0px;
     width: 100vw;
     right: 10px;
-}
-.section-title {
-    text-align: center;
-    color: black;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-decoration: underline;
-    position: relative;
-    top: 14px;
 }
 
 .nav-links a {
@@ -313,35 +304,18 @@ footer {
     color: #082B59;
 }
 
-
 .section-title {
-    text-align: center;
-    color: black;
-    font-size: 2.5rem;
-    margin: 40px 0;
-    font-weight: bold;
+    background-color: #59331D; /* Using the brown color from your theme */
+    color: white;
+    padding: 15px 30px;
+    margin: 0 auto; /* Centers the box horizontally */
+    width: fit-content; /* Makes the box only as wide as the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    position: static; /* Removes the previous relative positioning */
+ 
     position: relative;
-    padding-bottom: 15px;
+    top: 10px;
+    text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-a .section-title {
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a {
-    text-decoration: none;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background-color: black;
-    transition: width 0.3s ease;
-}
