@@ -3,102 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>product</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Products - Gulp Roast</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Minimal custom CSS for transition effects */
+      .card {
+        transition: transform 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+    </style>
   </head>
   <body>
-    <header class="main-header">
-      <div class="logo">
-        <img
-          class="gulplogo"
-          src="images/gulp-logo-dark.webp"
-          alt="gulp logo"
-        />
-      </div>
-      <nav class="nav-links">
-        <a href="index.html"><h2>Home</h2></a>
-        <a href="product.html"><h2>Products</h2></a>
-    </nav>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/gulp-logo-dark.webp" alt="gulp logo" height="60">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="product.html">Products</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="section1">
-      <main>
-        <div class="imagep1">
-          <img src="images/gulp-menu.jpg" alt="someone-drinking-coffee" />
-          <img src="images/gulp-coffee-beans.jpg" alt="" />
-          <img src="images/gulp-coffee-closeup.jpg" alt="" />
+
+    <!-- Product Images Section -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="ratio ratio-4x3 overflow-hidden rounded shadow">
+              <img src="images/gulp-menu.jpg" alt="menu" class="img-fluid w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ratio ratio-4x3 overflow-hidden rounded shadow">
+              <img src="images/gulp-coffee-beans.jpg" alt="coffee beans" class="img-fluid w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ratio ratio-4x3 overflow-hidden rounded shadow">
+              <img src="images/gulp-coffee-closeup.jpg" alt="coffee closeup" class="img-fluid w-100 h-100 object-fit-cover">
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
-    <section class="section4">
-    <h2 class="section-title">Our Roast Selection</h2>
-    <div class="card-container">
+
+    <!-- Roast Selection Section -->
+    <section class="container py-5">
+      <h2 class="text-center mb-5">Our Roast Selection</h2>
+      <div class="row g-4">
         <!-- Card 1 -->
-        <div class="card">
-            <img src="images/Designer (1).jpeg" alt="Product 1" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Normal Roast</h3>
-                <p class="card-description">Strong and bold with a bitter edge, perfect for a budget-friendly caffeine boost.</p>
-                <div class="card-price">$14.99</div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm hover-shadow">
+            <div class="ratio ratio-4x3">
+              <img src="images/Designer (1).jpeg" alt="Normal Roast" class="card-img-top object-fit-cover">
             </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Normal Roast</h3>
+              <p class="card-text flex-grow-1">Strong and bold with a bitter edge, perfect for a budget-friendly caffeine boost.</p>
+              <div class="card-text fw-bold">$14.99</div>
+            </div>
+          </div>
         </div>
-    
+
         <!-- Card 2 -->
-        <div class="card">
-            <img src="images/Designer (2).jpeg" alt="Product 2" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Great Roast</h3>
-                <p class="card-description">Smooth and balanced with mild nutty and chocolatey undertones.</p>
-                <div class="card-price">$19.99</div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="images/Designer (2).jpeg" alt="Great Roast" class="card-img-top object-fit-cover">
             </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Great Roast</h3>
+              <p class="card-text flex-grow-1">Smooth and balanced with mild nutty and chocolatey undertones.</p>
+              <div class="card-text fw-bold">$19.99</div>
+            </div>
+          </div>
         </div>
-    
+
         <!-- Card 3 -->
-        <div class="card">
-            <img src="images/Designer (3).jpeg" alt="Product 3" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">The Best Roast</h3>
-                <p class="card-description">Showcasing unique regional flavors like Ethiopian fruitiness or Colombian caramel.</p>
-                <div class="card-price">$24.99</div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="images/Designer (3).jpeg" alt="The Best Roast" class="card-img-top object-fit-cover">
             </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">The Best Roast</h3>
+              <p class="card-text flex-grow-1">Showcasing unique regional flavors like Ethiopian fruitiness or Colombian caramel.</p>
+              <div class="card-text fw-bold">$24.99</div>
+            </div>
+          </div>
         </div>
-    
+
         <!-- Card 4 -->
-        <div class="card">
-            <img src="images/Designer (4).jpeg" alt="Product 4" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Amazing Roast</h3>
-                <p class="card-description">Clean and vibrant with eco-friendly cultivation and subtle citrus notes.</p>
-                <div class="card-price">$29.99</div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="images/Designer (4).jpeg" alt="Amazing Roast" class="card-img-top object-fit-cover">
             </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Amazing Roast</h3>
+              <p class="card-text flex-grow-1">Clean and vibrant with eco-friendly cultivation and subtle citrus notes.</p>
+              <div class="card-text fw-bold">$29.99</div>
+            </div>
+          </div>
         </div>
-    
+
         <!-- Card 5 -->
-        <div class="card">
-            <img src="images/Designer (5).jpeg" alt="Product 5" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Perfect Roast</h3>
-                <p class="card-description">Rare small-batch beans with complex layers of tropical fruits and honey.</p>
-                <div class="card-price">$34.99</div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="images/Designer (5).jpeg" alt="Perfect Roast" class="card-img-top object-fit-cover">
             </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Perfect Roast</h3>
+              <p class="card-text flex-grow-1">Rare small-batch beans with complex layers of tropical fruits and honey.</p>
+              <div class="card-text fw-bold">$34.99</div>
+            </div>
+          </div>
         </div>
-    
+
         <!-- Card 6 -->
-        <div class="card">
-            <img src="images/Designer.jpeg" alt="Product 6" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Exquisite Roast</h3>
-                <p class="card-description"> Luxurious and rich with dark chocolate, jasmine, and a velvety finish.</p>
-                <div class="card-price">$99.99</div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-4x3">
+              <img src="images/Designer.jpeg" alt="Exquisite Roast" class="card-img-top object-fit-cover">
             </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Exquisite Roast</h3>
+              <p class="card-text flex-grow-1">Luxurious and rich with dark chocolate, jasmine, and a velvety finish.</p>
+              <div class="card-text fw-bold">$99.99</div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-    <footer>
-      <div class="footer-content">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5">
+      <div class="container text-center">
         <h2>Contact Us</h2>
-        <p>200 Fisherman's Dock, San Francisco, CA 94158</p>
-        <p>123-456-7890</p>
+        <p class="mb-1">200 Fisherman's Dock, San Francisco, CA 94158</p>
+        <p class="mb-0">123-456-7890</p>
       </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

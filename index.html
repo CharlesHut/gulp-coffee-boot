@@ -4,74 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gulp Roast</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="main-header">
-      <div class="logo">
-        <img class="gulplogo" src="images/gulp-logo-dark.webp" alt="gulp logo" />
-      </div>
-      <nav class="nav-links">
-        <a href="index.html"><h2>Home</h2></a>
-        <a href="product.html"><h2>Products</h2></a>
-    </nav>
-    </header>
-  <div class="section1">
-    <main>
-      <img class="imagep1" src="images/gulp-drinking-coffee.jpg" alt="someone-drinking-coffee" />
-    </main>
-  </div>
-  <div class="section2">
-    <div>
-      <div class="content-box">
-        <h2>About Us</h2>
-        <p>
-          Life without coffee is a gloomy place. That's why Gulp Roast has been
-          proudly serving up fresh coffee to the San Francisco area since 2000. Our
-          coffee is locally sourced with the most delicious blends coming directly
-          to your home, right from coffee farmers near you. Our coffee makes even
-          the most difficult days just a tad easier to get through.For us, this
-          isn't just brewing coffee. This is an active life mission to bring our
-          customers the most flavorful, full-bodied beverages we can get our hands
-          on. Browse our site to learn more about our locations and sourcing
-          techniques.
-        </p>
-    </div>
-    
-    <div class="image-row">
-        <img src="images/gulp-pouring-coffee-horizontal.jpg" alt="">
-        <img src="images/gulp-coffee-beans.jpg" alt="">
-        <img src="images/gulp-coffee-closeup.jpg" alt="">
-    </div>
-  </div>
-    <div class="section3">
-      <div class="content-container">
-        <div class="image-box">
-            <img src="images/gulp-menu.jpg" alt="menu">
-        </div>
-        <div class="text-box">
-            <h2>Purchasing</h2>
-            <p>
-                Our coffee shop is a cozy hangout with an array of freshly brewed lattes
-                and coffees. You can purchase our coffee at the following locations: Our
-                Coffee Shop: 200 Fisherman's Dock Bay Area Sunday Market San Francisco
-                Farmers Market
-            </p>
-            <a href="product.html">
-              <button class="blue-button">products</button>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/gulp-logo-dark.webp" alt="gulp logo" height="50">
           </a>
-          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    
+      </nav>
+    </header>
 
-    <footer>
-      <div class="footer-content">
-          <h2>Contact Us</h2>
-          <p>200 Fisherman's Dock, San Francisco, CA 94158</p>
-          <p>123-456-7890</p>
+    <!-- Hero Section -->
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-12">
+          <img class="img-fluid w-100" src="images/gulp-drinking-coffee.jpg" alt="someone-drinking-coffee">
+        </div>
       </div>
-  </footer>
-  
+    </div>
+
+    <!-- About Section -->
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">About Us</h2>
+              <p class="card-text">
+                Life without coffee is a gloomy place. That's why Gulp Roast has been
+                proudly serving up fresh coffee to the San Francisco area since 2000. Our
+                coffee is locally sourced with the most delicious blends coming directly
+                to your home, right from coffee farmers near you. Our coffee makes even
+                the most difficult days just a tad easier to get through. For us, this
+                isn't just brewing coffee. This is an active life mission to bring our
+                customers the most flavorful, full-bodied beverages we can get our hands
+                on. Browse our site to learn more about our locations and sourcing
+                techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Images Section -->
+<div class="container-fluid bg-light py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- First Image -->
+      <div class="col-md-4">
+        <div class="ratio ratio-1x1">
+          <img src="images/gulp-menu.jpg" 
+               alt="menu" 
+               class="rounded w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+      <!-- Second Image -->
+      <div class="col-md-4">
+        <div class="ratio ratio-1x1">
+          <img src="images/gulp-coffee-beans.jpg" 
+               alt="coffee beans" 
+               class="rounded w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+      <!-- Third Image -->
+      <div class="col-md-4">
+        <div class="ratio ratio-1x1">
+          <img src="images/gulp-coffee-closeup.jpg" 
+               alt="coffee closeup" 
+               class="rounded w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!-- Purchasing Section -->
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/gulp-menu.jpg" class="img-fluid rounded" alt="menu">
+        </div>
+        <div class="col-md-6">
+          <h2>Purchasing</h2>
+          <p>
+            Our coffee shop is a cozy hangout with an array of freshly brewed lattes
+            and coffees. You can purchase our coffee at the following locations: Our
+            Coffee Shop: 200 Fisherman's Dock Bay Area Sunday Market San Francisco
+            Farmers Market
+          </p>
+          <a href="product.html" class="btn btn-primary">Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p class="mb-0">200 Fisherman's Dock, San Francisco, CA 94158</p>
+        <p class="mb-0">123-456-7890</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

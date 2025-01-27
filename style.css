@@ -1,321 +1,156 @@
-
 @font-face {
     font-family: 'Wasted Vindey';
     src: url('path-to-your-font/WastedVindey.ttf') format('truetype');
-    
 }
 
-* {
+/* Custom Font Settings */
+body {
     font-family: 'Wasted Vindey', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Wasted Vindey', sans-serif;
-}
-
-p, span, a {
-    font-family: 'Wasted Vindey', sans-serif;
-    line-height: 1.6;
-}
-
-
-.nav-links h2 {
-    font-family: 'Wasted Vindey', sans-serif;
-}
-
-
-.content-box p {
-    font-family: 'Wasted Vindey', sans-serif;
-    line-height: 1.7;
-}
-
-.footer-content p {
-    font-family: 'Wasted Vindey', sans-serif;
-    line-height: 1.5;
-}
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Navbar Customization */
+.navbar {
+    background-color: white !important;
     padding: 1rem 2rem;
-    background-color: white;
-  }
-  
-  .logo .gulplogo {
+}
+
+.navbar-brand img {
     height: 150px;
     width: auto;
-  }
-  
-  .nav-links {
-    display: flex;
+}
+
+.navbar-nav {
     gap: 2rem;
-    position: relative;
-    bottom: 20px;
-    right: 100px;
-  }
-  
-  .nav-links h2 {
-    margin: 0;
-    cursor: pointer;
-
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .image-container {
-    background-color: #59331D; 
-    width: 90%; 
-    margin: 0; 
-    display: flex;
-    justify-content: center;
-  }
-  
-  .image1 {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: block; 
-  }
-  
-  .content-box {
-    background-color: white;
- 
-    padding: 30px;
-    margin: 0;
-    max-width: 800px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.content-box h2 {
-    color: white;
-    position: relative;
-    left: 350px;
+.nav-link {
+    color: #333 !important;
+    transition: color 0.3s ease;
+    font-size: 1.25rem;
 }
 
-.content-box p {
-    line-height: 1.6;
-    color: white;
+.nav-link:hover {
+    color: #082B59 !important;
 }
-.content-box {
+
+/* Section Backgrounds */
+.section-brown {
     background-color: #59331D;
-    
-    margin: 20px auto;
-    max-width: 800px;
+}
+
+.section-dark {
+    background-color: #131D26;
+}
+
+.section-orange {
+    background-color: #D98555;
+}
+
+.section-blue {
+    background-color: #082B59;
+}
+
+/* Cards */
+.card {
+    border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    top: 10px;
 }
 
-.image-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1800px;
+.card-body {
+    background-color: #59331D;
+    color: white;
 }
 
-.image-row img {
-    width: calc(33.33% - 14px); 
+.card-title {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Image Styles */
+.img-gallery {
     height: 450px;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 8px;
 }
-.section1{
+
+/* Button Styles */
+.btn-primary {
     background-color: #131D26;
-    width: 100vw;
-    position: relative;
-    right: 10px;  
-}
-.section2{
-    background-color: #D98555;
-    position: relative;
-    bottom: 20px;
-    width: 100vw;
-    right: 10px;
-}
-.section3{
-    background-color: #082B59 ;
-    width: 100vw;
-    position: relative;
-    right: 10px;
-}
-.content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 20px;
+    border: none;
+    padding: 8px 16px;
 }
 
-.image-box {
-    flex: 1;
+.btn-primary:hover {
+    background-color: #082B59;
 }
 
-.image-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-.text-box {
-    flex: 1;
-    background-color: #fff;
-    padding: 30px;
-  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.text-box h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.text-box p {
-    line-height: 1.6;
-    color: #666;
-}
+/* Footer Styles */
 footer {
     background-color: white;
-    padding: 40px 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.footer-content {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.footer-content h2 {
+footer h2 {
     color: #333;
     margin-bottom: 15px;
 }
 
-.footer-content p {
+footer p {
     color: #666;
-    margin: 5px 0;
     line-height: 1.5;
 }
-.blue-button {
-    background-color: #131D26;
-    color: white;
-    padding: 8px 16px;  
-    border: none;       
-    cursor: pointer;   
-}
 
-
-.blue-button:hover {
-    background-color: blue;
-}
-.imagep1{
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1800px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.card {
+/* Product Cards */
+.product-card {
     border: 1px solid #082B59;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #131D26;
     transition: transform 0.3s ease;
-    background-color: #131D26; 
 }
 
-.card:hover {
+.product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.card-image {
-    width: 100%;
+.product-card img {
     height: 200px;
     object-fit: cover;
 }
 
-.card-content {
-    padding: 16px;
-    color: white; 
+.product-card .card-body {
+    color: white;
 }
 
-.card-title {
+.product-card .card-title {
     font-size: 1.25rem;
-    font-weight: bold;
     margin-bottom: 8px;
-    color: white; 
 }
 
-.card-description {
-    color: white; 
-    margin-bottom: 16px;
-    line-height: 1.4;
-}
-
-.card-price {
+.product-card .price {
     font-size: 1.2rem;
-    color: white; 
     font-weight: bold;
 }
 
-.section4{
-    background-color: #D98555;
-    position: relative;
-    bottom: 0px;
-    width: 100vw;
-    right: 10px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.nav-links h2 {
-    margin: 0;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.nav-links h2:hover {
-    color: #082B59;
-}
-
+/* Section Title */
 .section-title {
-    background-color: #59331D; /* Using the brown color from your theme */
+    background-color: #59331D;
     color: white;
     padding: 15px 30px;
-    margin: 0 auto; /* Centers the box horizontally */
-    width: fit-content; /* Makes the box only as wide as the content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
-    position: static; /* Removes the previous relative positioning */
- 
-    position: relative;
-    top: 10px;
+    margin: 20px auto;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-decoration: underline;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 100px;
+    }
+
+    .img-gallery {
+        height: 300px;
+    }
+}
